@@ -1,0 +1,122 @@
+/* line 26, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+html, body {
+  font-family: "Open Sans", Helvetica, arial;
+  font-size: 16px;
+  line-height: 1.36;
+  max-width: 100%;
+  min-height: 100%; }
+
+/* line 34, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+body {
+  margin: 0;
+  padding: 0; }
+  /* line 38, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+  body * {
+    box-sizing: border-box; }
+
+/* line 43, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.container {
+  margin: 20px auto;
+  max-width: 400px;
+  width: 100%; }
+
+/* line 51, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.btn {
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 12px;
+  text-align: center; }
+  /* line 60, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+  .btn.-default {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #4c5e65; }
+    /* line 65, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+    .btn.-default:hover {
+      background-color: #eee; }
+  /* line 70, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+  .btn.-primary {
+    background-color: #2989c6;
+    border: 1px solid #2989c6; }
+    /* line 74, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+    .btn.-primary:hover {
+      background-color: #257ab1; }
+
+/* line 81, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.progress {
+  margin-bottom: 20px;
+  transition: all 0.2s ease; }
+
+/* line 86, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.progress-step {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+
+/* line 99, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.pull-right {
+  float: right; }
+
+/* line 103, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.pull-left {
+  float: left; }
+
+/* line 109, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.form-fields {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 114, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+  .form-fields > li {
+    margin-bottom: 20px; }
+
+/* line 119, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.form-footer {
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  padding-top: 20px; }
+
+/* line 125, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px; }
+
+/* line 132, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px; }
+  /* line 139, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+  .checkbox label, .radio label {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    padding: 1px 12px 1px 30px;
+    position: relative; }
+    /* line 146, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+    .checkbox label input, .radio label input {
+      left: 0;
+      position: absolute;
+      top: 0; }
+
+/* line 154, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+input {
+  font-size: 16px;
+  padding: 8px;
+  width: 100%; }
+
+/* line 160, C:/Users/Alex/Web Projects/Petgur/src/sass/app.scss */
+select {
+  font-size: 16px;
+  padding: 8px; }
