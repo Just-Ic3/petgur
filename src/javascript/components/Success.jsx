@@ -4,7 +4,7 @@ var Success = React.createClass({
   render: function() {
     return (
       <div>
-        <h2>Successfully Registered!</h2>
+        <h2>Success!</h2>
       </div>
     )
   }

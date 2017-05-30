@@ -1,5 +1,6 @@
 
 var React = require('react')
+var Start = require('./Start')
 var AccountFields = require('./AccountFields')
 var ContactFields = require('./ContactFields')
 var DoggieFields = require('./DoggieFields')
@@ -30,19 +31,25 @@ var fieldValues = {
 var Registration = React.createClass({
   getInitialState: function() {
     return {
-      step: 1
+      step: 0
     }
   },
 
   render: function() {
-    var style =  {
-      width : (this.state.step / 4 * 100) + '%'
+
+    const currStep = this.state.step;
+
+    let stepMark = null;
+
+    if (currStep > 0 && currStep < 5) {
+        stepMark = <span className="progress-step">Step {this.state.step}</span>;
+    } else {
+        stepMark = <p></p>
     }
 
     return (
       <main>
-        <span className="progress-step">Step {this.state.step}</span>
-        <progress className="progress" style={style}></progress>
+        {stepMark}
         {this.showStep()}
       </main>
     )
@@ -50,9 +57,13 @@ var Registration = React.createClass({
 
   showStep: function() {
     switch(this.state.step) {
+      case 0:
+        return <Start fieldValues={fieldValues}
+          nextStep={this.nextStep} saveValues={this.saveValues}/>
       case 1:
         return <AccountFields fieldValues={fieldValues}
-          nextStep={this.nextStep} saveValues={this.saveValues}/>
+          nextStep={this.nextStep} previousStep={this.previousStep}
+          saveValues={this.saveValues}/>
       case 2:
         return <ContactFields fieldValues={fieldValues}
           nextStep={this.nextStep} previousStep={this.previousStep}
@@ -75,9 +86,9 @@ var Registration = React.createClass({
     }()
   },
 
-  nextStep: function() {
+  nextStep: function(step = 1) {
     this.setState({
-      step : this.state.step + 1
+      step : this.state.step + step
     })
   },
 
