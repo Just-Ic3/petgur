@@ -6,6 +6,7 @@ var ContactFields = require('./ContactFields')
 var DoggieFields = require('./DoggieFields')
 var Confirmation = require('./Confirmation')
 var Success = require('./Success')
+var Match = require('./Match')
 
 var fieldValues = {
   //Account Fields
@@ -76,7 +77,10 @@ var Registration = React.createClass({
         return <Confirmation fieldValues={fieldValues}
           previousStep={this.previousStep} submitRegistration={this.submitRegistration}/>
       case 5:
-        return <Success fieldValues={fieldValues}/>
+        return <Success fieldValues={fieldValues}
+          nextStep={this.nextStep}/>
+      case 6:
+        return <Match fieldValues={fieldValues}/>
     }
   },
 
