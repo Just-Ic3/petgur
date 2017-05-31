@@ -1,9 +1,9 @@
 var React        = require('react')
-var Start = require('./components/Start')
+var Registration = require('./components/Registration')
 
 window.onload = function() {
   React.render(
-    <Start />,
+    <Registration />,
     document.getElementById('registration-form')
   )
 }
